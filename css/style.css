@@ -1,0 +1,46 @@
+@font-face {
+    font-family: "Gilroy";
+    font-weight: 400;
+    src: url("../fonts/Gilroy-Regular.woff2"), url("../fonts/Gilroy-Regular.woff");
+}
+
+@font-face {
+    font-family: "Gilroy";
+    font-weight: 600;
+    src: url("../fonts/Gilroy-Semibold.woff2"), url("../fonts/Gilroy-Semibold.woff");
+}
+
+@font-face {
+    font-family: "Gilroy";
+    font-weight: 700;
+    src: url("../fonts/Gilroy-Bold.woff"), url("../fonts/Gilroy-Bold.woff");
+}
+
+body {
+    font-family: "Gilroy", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    background-color: #fff;
+}
+
+label,
+button {
+    cursor: pointer;
+}
+
+.header-wrapper:first-child {
+    background-color: #20242D;
+}
+
+.address-link {
+    color: #FFF;
+    font-family: "Gilroy", sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+}
+

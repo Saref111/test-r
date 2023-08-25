@@ -4,19 +4,19 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
+        <link rel="stylesheet" href="./css/style.css" />
     </head>
     <body>
-        <header>
-            <div>
-                <address>Dąbrówka Wielkopolska, ul. Główna 53, 66-210 Zbąszynek</address>
-                <a href="mailto:dorotapawezka@gmail.com">dorotapawezka@gmail.com</a>
-                <a href="tel:+48695716531">+48695716531</a>
+        <header class="header">
+            <div class="header-wrapper">
+                <address class="address-link">Dąbrówka Wielkopolska, ul. Główna 53, 66-210 Zbąszynek</address>
+                <a class="address-link" href="mailto:dorotapawezka@gmail.com">dorotapawezka@gmail.com</a>
+                <a class="address-link" href="tel:+48695716531">+48695716531</a>
             </div>
-            <div>
+            <div class="header-wrapper">
                 <a href="/index.html">
-                    <img src="" alt="Logo Foton-tech">
+                    <img src="./img/logo.png" width="131" height="34" alt="Logo Foton-tech">
                 </a>
-
                 <nav>
                     <ul>
                         <li>
@@ -47,7 +47,7 @@
             </section>
 
             <section>
-                <img src="" alt="Panele Fotowoltaiczne na domi">
+                <img src="./img/my-house.jpg" width="600" height="600" alt="Panele Fotowoltaiczne na domi">
                 <h2>Ty i twói dom</h2>
                 <p>
                     Zrównoważony rozwój zaczyna się w domu od Ciebie i Twojej rodziny.
@@ -96,9 +96,57 @@
                 <a href="#">
                     Ochrona danych osobowych
                 </a>
+               
             </div>
         </footer>
+
+        <form action="https://bubu.com/form" method="post">
+            <label>
+                Roczne zużycie energii elektrycznej
+                <input type="range" min="100" max="1000" step="100">
+            </label>
+            <label>
+                Strona świata
+                <select name="direction" id="">
+                    <option value="West">1</option>
+                    <option value="East">2</option>
+                    <option value="North">3</option>
+                    <option value="South">4</option>
+                </select>
+            </label>
+
+            <label>
+                Twoje imię
+                <input type="text" name="name">
+            </label>
+            <label>
+                E-mail
+                <input type="email" name="email">
+            </label>
+            <label>
+                Telefon
+                <input type="tel" name="tel">
+            </label>
+            <label>
+                Checkbox
+                <input type="checkbox" name="checkbox">
+            </label>
+            <div>
+                <label>
+                    Red
+                    <input type="radio" name="color">
+                </label>
+                <label>
+                    Blue
+                    <input type="radio" name="color">
+                </label>
+                <label>
+                    Green
+                    <input type="radio" name="color">
+                </label>
+            </div>
+            <textarea name="text"></textarea>
+            <button type="submit">Submit</button>
+        </form>
     </body>
 </html>
-
-<a href="">Twitter</a>
