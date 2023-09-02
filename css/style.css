@@ -23,6 +23,7 @@ body {
     font-weight: 400;
     line-height: 24px;
     background-color: #fff;
+    margin: 0;
 }
 
 label,
@@ -30,8 +31,25 @@ button {
     cursor: pointer;
 }
 
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 55px;
+    padding-right: 55px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
 .header-wrapper:first-child {
     background-color: #20242D;
+    padding: 10px 55px;
 }
 
 .address-link {
@@ -43,4 +61,73 @@ button {
     line-height: normal;
     text-decoration: none;
 }
+.address-list {
+    display: flex;
+    gap: 55px;
+}
 
+.nav-list {
+    display: flex;
+    gap: 56px;
+}
+
+.nav-link {
+    color: #20242D;
+    font-family: "Gilroy", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-decoration: none;
+}
+
+.nav-link.current {
+    color: #FF7129;
+    position: relative;
+}
+
+.nav-link.current::before {
+    position: absolute;
+    content: '';
+    width: 10px;
+    height: 1px;
+    background-color: #FF7129;
+}
+
+.nav-link.current::after {
+    position: absolute; 
+    content: '';
+    width: 10px;
+    height: 1px;
+    background-color: #FF7129;
+}
+
+
+.hero-section {
+    background-color: rgba(32, 36, 45, 0.30);
+    background-image: radial-gradient(179.69% 50% at 50% 50%, rgba(32, 36, 45, 0.00) 0%, #20242D 100%), 
+                    url('../img/index-hero.jpg');
+    display: flex;
+    flex-direction: column;
+    padding-top: 271px;
+    padding-bottom: 290px;
+}
+
+.main-title {
+    color: #FFF;
+    text-align: center;
+    font-size: 92px;
+    font-weight: 700;
+    line-height: normal;
+    margin: 0;
+}
+
+.main-text {
+    width: 500px;
+    margin: 0 auto;
+    color: #FFF;
+    text-align: center;
+    font-size: 16px;
+
+    line-height: 24px;
+}
